@@ -1,6 +1,6 @@
-Copyright 2015 - The CyanogenMod Project
+Copyright 2017 - The LineageOS Project
 
-Device configuration for Huawei Honor 4/4X.
+Device configuration for Huawei Y635.
 =====================================
 
 Basic   | Spec Sheet
@@ -8,15 +8,16 @@ Basic   | Spec Sheet
 CPU     | Quad-core 1.2 GHz ARM® Cortex™ A53
 CHIPSET | Qualcomm MSM8916 Snapdragon 410
 GPU     | Adreno 306
-Memory  | 1 GB / 2 GB
+Memory  | 1 GB
 Shipped Android Version | 4.4.4
 Storage | 8 GB
 MicroSD | Up to 32 GB
-Battery | 2000 / 3000 mAh (non-removable)
-Dimensions | 142.95 x 72 x 8.5 mm / 152.9 x 77.2 x 8.65 mm
-Display | 720 x 1280 pixels, 5.0" / 5.5"
-Rear Camera  | 8.0 / 13.0 MP, LED flash
-Front Camera | 2.0 / 5.0 MP
-Release Date | September 2014
+Battery | 2000 mAh
+Dimensions | 144 x 72.9 x 10.2 mm
+Display | 480 x 854 pixels, 5.0"
+Rear Camera  | 5.0 MP LED flash
+Front Camera | 2.0 MP
+Release Date | March 2015
 
-![Huawei Honor 4X](https://wiki.cyanogenmod.org/images/thumb/2/20/Cherry.png/314px-Cherry.png "Huawei Honor 4X")
+![Huawei Y635](http://cdn2.gsmarena.com/vv/pics/huawei/huawei-y635-2.jpg "Huawei Y635")
+

@@ -17,6 +17,9 @@
 
 set -e
 
+DEVICE=hwY635
+VENDOR=huawei
+
 # Load extractutils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi

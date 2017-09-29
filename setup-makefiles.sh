@@ -17,6 +17,9 @@
 
 set -e
 
+DEVICE=hwY635
+VENDOR=huawei
+
 INITIAL_COPYRIGHT_YEAR=2015
 
 # Load extractutils and do some sanity checks

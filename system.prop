@@ -5,7 +5,7 @@ persist.audio.fluence.voicerec=false
 persist.audio.fluence.speaker=true
 
 # Display
-ro.sf.lcd_density=320
+ro.sf.lcd_density=240
 ro.qualcomm.cabl=0
 
 # HWUI
@@ -29,3 +29,6 @@ ro.sys.fw.dex2oat_thread_count=3
 
 # Storage
 ro.sys.sdcardfs=true
+
+# Hack HAL1 Legacy
+camera2.portability.force_api=1

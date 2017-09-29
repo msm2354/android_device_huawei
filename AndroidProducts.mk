@@ -14,10 +14,5 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := $(call my-dir)
-
-include $(CLEAR_VARS)
-LOCAL_SRC_FILES := hw_cutils.c
-LOCAL_MODULE := libshim_cutils
-LOCAL_MODULE_TAGS := optional
-include $(BUILD_SHARED_LIBRARY)
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/full_hwY635.mk

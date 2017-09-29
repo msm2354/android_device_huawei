@@ -14,10 +14,15 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := $(call my-dir)
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-include $(CLEAR_VARS)
-LOCAL_SRC_FILES := hw_cutils.c
-LOCAL_MODULE := libshim_cutils
-LOCAL_MODULE_TAGS := optional
-include $(BUILD_SHARED_LIBRARY)
+# Inherit device configuration
+$(call inherit-product, device/huawei/hwY635/device.mk)
+
+# Device identifier. This must come after all inclusions
+PRODUCT_DEVICE := hwY635
+PRODUCT_NAME := full_hwY635
+PRODUCT_BRAND := Huawei
+PRODUCT_MODEL := hwY635
+PRODUCT_MANUFACTURER := HUAWEI

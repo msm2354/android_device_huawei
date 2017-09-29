@@ -30,24 +30,16 @@ static inline const char* BtmGetDefaultName()
 	char product_model[PROPERTY_VALUE_MAX];
 	property_get("ro.product.model", product_model, "");
 
-	if (strstr(product_model, "C8817D"))
-		return "HUAWEI C8817D";
-	if (strstr(product_model, "C8817E"))
-		return "HUAWEI C8817E";
-	if (strstr(product_model, "G621-TL00"))
-		return "HUAWEI G621-TL00";
-	if (strstr(product_model, "G620S-UL00"))
-		return "HUAWEI G620S-UL00";
-	if (strstr(product_model, "G620S-L01"))
-		return "HUAWEI G620S-L01";
-	if (strstr(product_model, "G620S-L02"))
-		return "HUAWEI G620S-L02";
-	if (strstr(product_model, "Che1-CL10"))
-		return "HUAWEI Che1-CL10";
-	if (strstr(product_model, "Che1-CL20"))
-		return "HUAWEI Che1-CL20";
-	if (strstr(product_model, "Che1-L04"))
-		return "HUAWEI Che1-L04";
+	if (strstr(product_model, "Y635-L01"))
+		return "HUAWEI Y635-L01";
+	if (strstr(product_model, "Y635-L02"))
+		return "HUAWEI Y635-L02";
+	if (strstr(product_model, "Y635-L03"))
+		return "HUAWEI Y635-L01";
+	if (strstr(product_model, "Y635-L11"))
+		return "HUAWEI Y635-L11";
+	if (strstr(product_model, "Y635-L21"))
+		return "HUAWEI Y635-L21";
 
 	return "";
 }

@@ -553,14 +553,19 @@
         <ctl name="ADC2 MUX" value="INP3" />
     </path>
 
-    <path name="speaker">
+   <path name="speaker">
+		<ctl name="Speaker Boost" value="ENABLE" />
         <ctl name="RX3 MIX1 INP1" value="RX1" />
         <ctl name="SPK DAC Switch" value="1" />
+		<ctl name="RX3 Digital Volume" value="98" />
     </path>
 
     <path name="speaker-mic">
+		<ctl name="DEC1 MUX" value="ADC1" />
+		<ctl name="DEC1 Volume" value="100" />
         <path name="adc1" />
         <ctl name="IIR1 INP1 MUX" value="DEC1" />
+		<ctl name="ADC1 Volume" value="6" />
     </path>
 
     <path name="handset">

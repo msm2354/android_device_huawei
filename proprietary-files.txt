@@ -6,6 +6,9 @@ lib/libmm-qcamera.so
 vendor/lib/libqc-opt.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegehw.so
+vendor/lib/libmmcamera_ov2680_byd_bm2920b.so
+vendor/lib/libmmcamera_s5k5e2_foxconn_hc0806.so
+vendor/lib/libmmcamera_s5k5e2_ofilm_ohw5f02.so
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_frame_algorithm.so
@@ -89,6 +92,9 @@ vendor/lib/libactuator_rohm_bu64243gwz_camera.so
 vendor/lib/libactuator_s5k4e1_liteon_13p1.so
 vendor/lib/libactuator_s5k4e1_liteon_13p1_camcorder.so
 vendor/lib/libactuator_s5k4e1_liteon_13p1_camera.so
+vendor/lib/libactuator_s5k5e2_foxconn_hc0806.so
+vendor/lib/libactuator_s5k5e2_foxconn_hc0806_camcorder.so
+vendor/lib/libactuator_s5k5e2_foxconn_hc0806_camera.so
 
 # Camera chromatix
 lib/libchromatix_imx135_liveshot.so
@@ -177,6 +183,10 @@ vendor/lib/libchromatix_ov2680_ofilm_fe16_y550_preview.so
 vendor/lib/libchromatix_ov2680_ofilm_fe16_y550_snapshot.so
 vendor/lib/libchromatix_ov2680_preview.so
 vendor/lib/libchromatix_ov2680_snapshot.so
+vendor/lib/libchromatix_ov2680_byd_bm2920b_common.so
+vendor/lib/libchromatix_ov2680_byd_bm2920b_default_video.so
+vendor/lib/libchromatix_ov2680_byd_bm2920b_preview.so
+vendor/lib/libchromatix_ov2680_byd_bm2920b_snapshot.so
 vendor/lib/libchromatix_ov2720_common.so
 vendor/lib/libchromatix_ov2720_default_video.so
 vendor/lib/libchromatix_ov2720_hfr.so
@@ -313,6 +323,15 @@ vendor/lib/libchromatix_s5k3l1yx_preview.so
 vendor/lib/libchromatix_s5k3l1yx_snapshot.so
 vendor/lib/libchromatix_s5k3l1yx_video_hd.so
 vendor/lib/libchromatix_s5k3l1yx_zsl.so
+vendor/lib/libchromatix_s5k5e2_ofilm_ohw5f02_common.so
+vendor/lib/libchromatix_s5k5e2_ofilm_ohw5f02_default_video.so
+vendor/lib/libchromatix_s5k5e2_ofilm_ohw5f02_hfr_60fps.so
+vendor/lib/libchromatix_s5k5e2_ofilm_ohw5f02_hfr_90fps.so
+vendor/lib/libchromatix_s5k5e2_ofilm_ohw5f02_hfr_120fps.so
+vendor/lib/libchromatix_s5k5e2_ofilm_ohw5f02_liveshot.so
+vendor/lib/libchromatix_s5k5e2_ofilm_ohw5f02_preview.so
+vendor/lib/libchromatix_s5k5e2_ofilm_ohw5f02_snapshot.so
+vendor/lib/libchromatix_s5k5e2_ofilm_ohw5f02_video_hd.so
 vendor/lib/libchromatix_S5K4E1_13P1BA_common.so
 vendor/lib/libchromatix_S5K4E1_13P1BA_default_video.so
 vendor/lib/libchromatix_S5K4E1_13P1BA_hfr_60fps.so
@@ -363,6 +382,15 @@ vendor/lib/libchromatix_s5k9a1_liteon_common.so
 vendor/lib/libchromatix_s5k9a1_liteon_default_video.so
 vendor/lib/libchromatix_s5k9a1_liteon_liveshot.so
 vendor/lib/libchromatix_s5k9a1_liteon_preview.so
+vendor/lib/libchromatix_s5k5e2_foxconn_hc0806_common.so
+vendor/lib/libchromatix_s5k5e2_foxconn_hc0806_default_video.so
+vendor/lib/libchromatix_s5k5e2_foxconn_hc0806_hfr_60fps.so
+vendor/lib/libchromatix_s5k5e2_foxconn_hc0806_hfr_90fps.so
+vendor/lib/libchromatix_s5k5e2_foxconn_hc0806_hfr_120fps.so
+vendor/lib/libchromatix_s5k5e2_foxconn_hc0806_liveshot.so
+vendor/lib/libchromatix_s5k5e2_foxconn_hc0806_preview.so
+vendor/lib/libchromatix_s5k5e2_foxconn_hc0806_snapshot.so
+vendor/lib/libchromatix_s5k5e2_foxconn_hc0806_video_hd.so
 vendor/lib/libchromatix_SKUAA_ST_gc0339_common.so
 vendor/lib/libchromatix_SKUAA_ST_gc0339_default_video.so
 vendor/lib/libchromatix_SKUAA_ST_gc0339_preview.so
@@ -464,6 +492,30 @@ vendor/lib/libmmcamera_sunny_q8v18a_eeprom.so
 vendor/lib/libmmcamera_sunny_q13v04b_eeprom.so
 vendor/lib/libmmcamera_truly_cm7700_eeprom.so
 
+# NFC
+-vendor/app/GsmaNfcService/GsmaNfcService.apk
+-vendor/app/QNfc/QNfc.apk
+etc/firmware/fused_nvm.bin
+etc/firmware/nfc_test.bin
+etc/firmware/Signedrompatch_v20.bin
+etc/firmware/Signedrompatch_v21.bin
+etc/firmware/Signedrompatch_v24.bin
+etc/firmware/Signedrompatch_v30.bin
+etc/nfc/hardfault.cfg
+etc/permissions/com.android.nfc.helper.xml
+etc/permissions/com.android.qualcomm.qti.nfc_extras.xml
+etc/permissions/com.gsma.services.nfc.xml
+etc/permissions/com.gsma.services.utils.xml
+etc/permissions/com.vzw.nfc.xml
+framework/com.android.nfc.helper.jar
+framework/com.android.qualcomm.qti.nfc_extras.jar
+framework/com.gsma.services.nfc.jar
+framework/com.gsma.services.utils.jar
+framework/com.vzw.nfc.jar
+vendor/lib/hw/nfc_nci.qc199x.default.so
+vendor/lib/libqnfc-nci.so
+vendor/lib/libqnfc_nci_jni.so
+
 # Qualcomm framework
 bin/irsc_util
 bin/oeminfo_server
@@ -512,6 +564,7 @@ vendor/lib/libsystem_health_mon.so
 vendor/lib/libxml.so
 
 # Sensors
+lib/hw/sensors.msm8916.so
 vendor/etc/pdc_G620s_L01.txt
 vendor/lib/libcalmodule_akm.so
 
