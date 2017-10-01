@@ -59,9 +59,7 @@ TARGET_PROVIDES_LIBLIGHT := true
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 TARGET_KERNEL_SOURCE := kernel/huawei/hwY635
-TARGET_KERNEL_CONFIG := lineageos_hwY635_defconfig
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-6.0/bin
+TARGET_KERNEL_CONFIG := hwY635_defconfig
 
 # Partitions
 TARGET_USERIMAGES_USE_EXT4 := true
