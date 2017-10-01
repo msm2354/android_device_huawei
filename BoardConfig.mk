@@ -127,4 +127,3 @@ TARGET_PROVIDES_WCNSS_QMI := true
 
 # inherit from the proprietary version
 -include vendor/huawei/hwY635/BoardConfigVendor.mk
--include vendor/huawei/msm8916-common/BoardConfigVendor.mk
