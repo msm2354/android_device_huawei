@@ -21,7 +21,7 @@ include device/cyanogen/msm8916-common/BoardConfigCommon.mk
 DEVICE_PATH := device/huawei/hwY635
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := hwY635,Y635-L01,Y635-L02,Y635-L03,Y635-L11,Y635-L21
+#TARGET_OTA_ASSERT_DEVICE := hwY635,Y635-L01,Y635-L02,Y635-L03,Y635-L11,Y635-L21
 
 # Audio
 USE_XML_AUDIO_POLICY_CONF := 1
@@ -40,8 +40,8 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
 # CMHW
-BOARD_HARDWARE_CLASS += \
-    $(DEVICE_PATH)/cmhw
+#BOARD_HARDWARE_CLASS += \
+#    $(DEVICE_PATH)/cmhw
 
 # Flags
 BOARD_NO_SECURE_DISCARD := true
@@ -58,6 +58,7 @@ TARGET_PROVIDES_LIBLIGHT := true
 
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_IMAGE_NAME := zImage
 TARGET_KERNEL_SOURCE := kernel/huawei/hwY635
 TARGET_KERNEL_CONFIG := hwY635_defconfig
 
@@ -102,15 +103,11 @@ endif
 # RIL
 BOARD_GLOBAL_CFLAGS += -DUSE_RIL_VERSION_11
 
-# Dexpreopt
 ifeq ($(HOST_OS),linux)
-  ifneq ($(TARGET_BUILD_VARIANT),eng)
-    ifeq ($(WITH_DEXPREOPT),)
-      WITH_DEXPREOPT := true
-    endif
+  ifeq ($(TARGET_BUILD_VARIANT),user)
+    WITH_DEXPREOPT_COMP ?= false
   endif
 endif
-WITH_DEXPREOPT_BOOT_IMG_ONLY ?= true
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
