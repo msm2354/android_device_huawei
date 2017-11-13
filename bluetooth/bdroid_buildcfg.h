@@ -1,11 +1,5 @@
 /*
- *
- *  Copyright (c) 2013, The Linux Foundation. All rights reserved.
- *  Not a Contribution, Apache license notifications and license are retained
- *  for attribution purposes only.
- *
- * Copyright (C) 2012 The Android Open Source Project
- * Copyright (C) 2017 The LineageOS Project
+ * Copyright (C) 2015 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,31 +16,14 @@
 
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
-#include <cutils/properties.h>
-#include <string.h>
 
-static inline const char* BtmGetDefaultName()
-{
-	char product_model[PROPERTY_VALUE_MAX];
-	property_get("ro.product.model", product_model, "");
-
-	if (strstr(product_model, "Y635-L01"))
-		return "HUAWEI Y635-L01";
-	if (strstr(product_model, "Y635-L02"))
-		return "HUAWEI Y635-L02";
-	if (strstr(product_model, "Y635-L03"))
-		return "HUAWEI Y635-L01";
-	if (strstr(product_model, "Y635-L11"))
-		return "HUAWEI Y635-L11";
-	if (strstr(product_model, "Y635-L21"))
-		return "HUAWEI Y635-L21";
-
-	return "";
-}
-
-#define BTM_DEF_LOCAL_NAME BtmGetDefaultName()
-#define BLE_VND_INCLUDED          TRUE
-#define BLUETOOTH_QTI_SW          TRUE
-#define BT_CLEAN_TURN_ON_DISABLED TRUE
-#define MAX_ACL_CONNECTIONS       7
+#define BTM_DEF_LOCAL_NAME   "Huawei Y635"
+// Disables read remote device feature
+#define BTA_SKIP_BLE_READ_REMOTE_FEAT FALSE
+#define MAX_ACL_CONNECTIONS    7
+#define MAX_L2CAP_CHANNELS    16
+#define BLE_VND_INCLUDED   TRUE
+// skips conn update at conn completion
+#define BTA_BLE_SKIP_CONN_UPD  FALSE
+#define BLE_PERIPHERAL_ADV_NAME  TRUE
 #endif
