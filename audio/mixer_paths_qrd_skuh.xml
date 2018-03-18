@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!--
     Copyright (c) 2014, The Linux Foundation. All rights reserved.
-
+   
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions are
     met:
@@ -350,8 +350,8 @@
         <ctl name="Internal BTSCO SampleRate" value="16000" />
         <path name="voice-call bt-sco" />
     </path>
-
-    <path name="voice-call usb-headphones">
+	
+	<path name="voice-call usb-headphones">
         <ctl name="AFE_PCM_RX_Voice Mixer CSVoice" value="1" />
         <ctl name="Voice_Tx Mixer AFE_PCM_TX_Voice" value="1" />
     </path>
@@ -733,7 +733,7 @@
 	<ctl name="DEC2 Volume" value="84" />
     </path>
 
-    <path name="voice-speaker-dmic-ef">
+	<path name="voice-speaker-dmic-ef">
         <path name="dmic-endfire" />
     </path>
 
